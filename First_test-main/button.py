@@ -9,7 +9,7 @@ class Button():
         self.width, self.height = 1450, 100
         self.button_color = (255, 140, 0)
         self.text_color = (255, 255, 255)
-        self.font = pygame.font.SysFont(None, 72)  # Увеличили размер шрифта
+        self.font = pygame.font.SysFont(None, 72)
 
         self.rect = pygame.Rect(0, 0, self.width, self.height)
         self.rect.center = self.screen_rect.center

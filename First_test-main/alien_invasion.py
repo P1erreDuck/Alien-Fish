@@ -17,7 +17,7 @@ class AlienInvasion:
         self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
         self.settings.screen_width = self.screen.get_rect().width
         self.settings.screen_height = self.screen.get_rect().height
-        pygame.display.set_caption("Анекдот про уху")
+        pygame.display.set_caption("Alien Fish Soup")
         self.stats = GameStats(self)
         self.sb = Scoreboard(self)
         self.ship = Ship(self)
@@ -25,7 +25,7 @@ class AlienInvasion:
         self.bullets = pygame.sprite.Group()
         self.aliens = pygame.sprite.Group()
         self._create_fleet()
-        self.play_button = Button(self, "Как называется суп из одной рыбы? Уха. А из 1000?")
+        self.play_button = Button(self, "Управление W A S D, стрельба SPACE. ЛКМ - старт.")
         self.moving_right = False
 
         self.bullets = pygame.sprite.Group()
